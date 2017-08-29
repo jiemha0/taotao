@@ -30,6 +30,6 @@
 	<!-- 切面 -->
 	<aop:config>
 		<aop:advisor advice-ref="txAdvice"
-			pointcut="execution(* com.jiem.service.*.*(..))" />
+			pointcut="execution(* com.jiem.service.impl.*.*(..))" />
 	</aop:config>
 </beans>
