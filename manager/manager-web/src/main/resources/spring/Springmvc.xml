@@ -7,8 +7,15 @@
         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
+	<!-- 激活已经在spring容器里注册过的bean -->
+	<!--<context:annotation-config />-->
+	<!--除了具有<context:annotation-config>的功能之外，还可以在指定的package下
+	          把标记了@Controller注解的类转换为bean 
+	-->
 	<context:component-scan base-package="com.jiem.controller" />
+	<!-- 解析@Controller -->
 	<mvc:annotation-driven />
+	
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/jsp/" />
@@ -16,7 +23,7 @@
 	</bean>
 
 	<!-- 资源映射 -->
-	<mvc:resources location="/WEB-INF/js/" mapping="/js/**"/>
-	<mvc:resources location="/WEB-INF/css/" mapping="/css/**"/>
-	
+	<mvc:resources location="/WEB-INF/js/" mapping="/js/**" />
+	<mvc:resources location="/WEB-INF/css/" mapping="/css/**" />
+
 </beans>
