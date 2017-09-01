@@ -9,13 +9,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.jiem.pojo.TbItem;
 import com.jiem.pojo.result.EUDataGridResult;
 import com.jiem.service.ItemService;
+import com.jim.commom.TaotaoResult;
 
 @Controller
 public class ItemController {
 
 	@Autowired
 	private ItemService itemService;
-	
+
 	@RequestMapping("/item/{itemId}")
 	@ResponseBody
 	public TbItem getItemById(@PathVariable Long itemId) {
@@ -25,11 +26,13 @@ public class ItemController {
 
 	/**
 	 * 商品列表查询
-	 * @param page 第几页
-	 * @param rows 每页行数
+	 * 
+	 * @param page
+	 *            第几页
+	 * @param rows
+	 *            每页行数
 	 * @return 包装的EasyUI所需要的结果集POJO对象
-	 * @author jiem.ha0 
-	 * 2017年8月29日下午9:39:53
+	 * @author jiem.ha0 2017年8月29日下午9:39:53
 	 */
 	@RequestMapping("/item/list")
 	@ResponseBody
@@ -37,4 +40,13 @@ public class ItemController {
 		EUDataGridResult result = itemService.getItemList(page, rows);
 		return result;
 	}
+
+	@RequestMapping("/save")
+	@ResponseBody
+	public TaotaoResult saveItem(TbItem item, String desc) throws Exception {
+		// 添加商品信息
+		itemService.saveItem(item, desc, null);
+		return TaotaoResult.ok();
+	}
+
 }
