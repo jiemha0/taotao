@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.jiem.commom.PictureResult;
 import com.jiem.service.PictureService;
-import com.jim.commom.PictureResult;
 
 @Controller
 @RequestMapping("/pic")

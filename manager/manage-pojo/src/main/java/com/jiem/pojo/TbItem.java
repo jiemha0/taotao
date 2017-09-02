@@ -2,6 +2,11 @@ package com.jiem.pojo;
 
 import java.util.Date;
 
+/**
+ * 商品
+ * @author jiem.ha0  <br/>
+ * 2017年8月30日
+ */
 public class TbItem {
     private Long id;
 

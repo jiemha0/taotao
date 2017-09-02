@@ -1,8 +1,8 @@
 package com.jiem.service;
 
+import com.jiem.commom.TaotaoResult;
 import com.jiem.pojo.TbItem;
 import com.jiem.pojo.result.EUDataGridResult;
-import com.jim.commom.TaotaoResult;
 
 /**
  * 

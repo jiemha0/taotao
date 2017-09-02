@@ -2,7 +2,7 @@ package com.jiem.service;
 
 import org.springframework.web.multipart.MultipartFile;
 
-import com.jim.commom.PictureResult;
+import com.jiem.commom.PictureResult;
 
 
 /**

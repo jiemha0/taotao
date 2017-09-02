@@ -7,10 +7,10 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.jiem.commom.FtpUtil;
+import com.jiem.commom.IDUtils;
+import com.jiem.commom.PictureResult;
 import com.jiem.service.PictureService;
-import com.jim.commom.FtpUtil;
-import com.jim.commom.IDUtils;
-import com.jim.commom.PictureResult;
 
 @Service
 public class PictureServiceImpl implements PictureService {

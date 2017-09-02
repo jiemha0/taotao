@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.jiem.commom.TaotaoResult;
 import com.jiem.pojo.TbItem;
 import com.jiem.pojo.result.EUDataGridResult;
 import com.jiem.service.ItemService;
-import com.jim.commom.TaotaoResult;
 
 @Controller
 public class ItemController {
