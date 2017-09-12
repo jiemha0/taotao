@@ -7,6 +7,7 @@ import java.util.Random;
  * 各种id生成策略
  * @author jiem.ha0  
  * @date 2017年8月31日
+ * @version 1.0
  */
 public class IDUtils {
 

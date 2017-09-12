@@ -6,8 +6,12 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+
 /**
  * 淘淘商城自定义响应结构
+ * @author jiem.ha0  
+ * @date 2017年9月12日
+ * @version 1.0
  */
 public class JsonUtils {
 
@@ -16,10 +20,10 @@ public class JsonUtils {
 
     /**
      * 将对象转换成json字符串。
-     * <p>Title: pojoToJson</p>
-     * <p>Description: </p>
-     * @param data
-     * @return
+     * @param data 需要转换的对象
+     * @return 装换后的json字符串
+     * @author jiem.ha0 
+     * @time 2017年9月12日下午8:11:58
      */
     public static String objectToJson(Object data) {
     	try {
@@ -33,10 +37,11 @@ public class JsonUtils {
     
     /**
      * 将json结果集转化为对象
-     * 
      * @param jsonData json数据
-     * @param clazz 对象中的object类型
-     * @return
+     * @param beanType 对象中的object类型
+     * @return 
+     * @author jiem.ha0 
+     * @time 2017年9月12日下午8:12:37
      */
     public static <T> T jsonToPojo(String jsonData, Class<T> beanType) {
         try {
@@ -50,11 +55,11 @@ public class JsonUtils {
     
     /**
      * 将json数据转换成pojo对象list
-     * <p>Title: jsonToList</p>
-     * <p>Description: </p>
      * @param jsonData
      * @param beanType
-     * @return
+     * @return 
+     * @author jiem.ha0 
+     * @time 2017年9月12日下午8:15:59
      */
     public static <T>List<T> jsonToList(String jsonData, Class<T> beanType) {
     	JavaType javaType = MAPPER.getTypeFactory().constructParametricType(List.class, beanType);

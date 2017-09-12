@@ -1,6 +1,5 @@
 package com.jiem.commom;
 
-
 /**
  * 上传图片返回值
  * @author jiem.ha0  <br/>
@@ -47,6 +46,12 @@ public class PictureResult {
 	}
 	public void setMessage(String message) {
 		this.message = message;
+	}
+	
+	@Override
+	public String toString() {
+		return "PictureResult [error=" + error + ", url=" + url + ", message="
+				+ message + "]";
 	}
 	
 }
