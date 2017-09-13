@@ -26,6 +26,7 @@ public class ItemServiceImpl implements ItemService {
 	private TbItemMapper itemMapper;
 	@Autowired
 	private TbItemDescMapper itemDescMapper;
+	
 	@Override
 	public TbItem getItemById(Long itemId) {
 
