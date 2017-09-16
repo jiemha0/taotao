@@ -3,6 +3,7 @@ package com.jiem.service.impl;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.jiem.commom.TaotaoResult;
 import com.jiem.mapper.TbItemParamMapper;
@@ -10,7 +11,7 @@ import com.jiem.pojo.TbItemParam;
 import com.jiem.pojo.TbItemParamExample;
 import com.jiem.pojo.TbItemParamExample.Criteria;
 import com.jiem.service.ItemParamService;
-
+@Service
 public class ItemParamServiceImpl implements ItemParamService {
 
 	@Autowired
